@@ -3,13 +3,7 @@ using UnityEngine;
 
 public class GoldTester : MonoBehaviour
 {
-    private IWalletService _wallet;
-    
-    [Inject]
-    public void Construct(IWalletService wallet)
-    {
-        _wallet = wallet;
-    }
+    [Inject] private IWalletService _wallet;
 
     private void Start()
     {

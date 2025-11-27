@@ -1,0 +1,18 @@
+using UnityEngine;
+using UnityEngine.Events;
+
+#ROOTNAMESPACEBEGIN#
+[CreateAssetMenu(
+    fileName = "New#SCRIPTNAME#",
+    menuName = "Game/Event Channels/#SCRIPTNAME#",
+    order = 0)]
+public class #SCRIPTNAME# : ScriptableObject
+{
+    public UnityEvent OnEventRaised;
+
+    public void RaiseEvent()
+    {
+        OnEventRaised?.Invoke();
+    }
+}
+#ROOTNAMESPACEEND#

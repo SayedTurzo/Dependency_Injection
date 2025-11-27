@@ -1,0 +1,13 @@
+using UnityEngine;
+
+#ROOTNAMESPACEBEGIN#
+[CreateAssetMenu(
+    fileName = "New#SCRIPTNAME#",
+    menuName = "Game/#SCRIPTNAME#",
+    order = 0)]
+public class #SCRIPTNAME# : ScriptableObject
+{
+    // public int someValue;
+    // public string description;
+}
+#ROOTNAMESPACEEND#

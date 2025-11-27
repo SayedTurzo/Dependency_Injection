@@ -1,0 +1,8 @@
+#ROOTNAMESPACEBEGIN#
+public enum #SCRIPTNAME#
+{
+    None = 0,
+    // OptionA,
+    // OptionB,
+}
+#ROOTNAMESPACEEND#

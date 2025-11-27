@@ -1,0 +1,8 @@
+#ROOTNAMESPACEBEGIN#
+[System.Serializable]
+public struct #SCRIPTNAME#
+{
+    // public int value;
+    // public float anotherValue;
+}
+#ROOTNAMESPACEEND#

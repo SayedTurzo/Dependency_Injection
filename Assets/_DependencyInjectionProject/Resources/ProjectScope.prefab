@@ -57,3 +57,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca4cc8dd512c4d16aa73312737b2c7c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProjectInstaller
+  _playerConfig: {fileID: 11400000, guid: 14fdaac55166955409815dc17985e92d, type: 2}
