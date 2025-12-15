@@ -43,15 +43,9 @@ public class MenuUIController : MonoBehaviour
     {
         string name = roomNameInput.text;
         if (string.IsNullOrEmpty(name)) return;
-
-        // Create room for 4 players
-        //FusionLauncher.Instance.CreateRoom(name, 4);
         
         ShowLoading(); // Show loading immediately
-        // Switch UI to Waiting Room
-        //ShowPanel(waitingRoomPanel);
         FusionLauncher.Instance.CreateRoom(roomNameInput.text, 4);
-        //startGameButton.interactable = false; // Cannot start yet
     }
 
     // CALL THIS FROM THE ROOM LIST ITEM
@@ -189,16 +183,12 @@ public class MenuUIController : MonoBehaviour
             if (player == _currentRunner.LocalPlayer) name += " (You)";
 
             // Is this the Host?
-            bool isHost = player.PlayerId == hostId || _currentRunner.IsServer && player == _currentRunner.LocalPlayer;
-
             // Check A: Does ID match the property?
-
             // Check B: Fallback - If I am the server, I am the host
-
             // Check C (Temporary Fallback): If property is missing, assume Player 1 is Host
             // (This helps fix the visual glitch if network is slow)
+            bool isHost = player.PlayerId == hostId || _currentRunner.IsServer && player == _currentRunner.LocalPlayer;
             if (hostId == -1 && player.PlayerId == 1) isHost = true; 
-
             if (isHost) name += " <color=yellow>[Host]</color>";
 
             item.GetComponent<WaitingPlayerItem>().Setup(name);
