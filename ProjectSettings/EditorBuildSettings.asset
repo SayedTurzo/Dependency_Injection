@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Photon Fusion tutorial/Test/FusionMinimalSetup.unity
-    guid: d27d262089c365f4db1faa8a46d2f6df
+    path: Assets/Photon Fusion tutorial/MainMenu.unity
+    guid: 1faa6bc5ce1c17345bda0d0e581eeaf8
+  - enabled: 1
+    path: Assets/Photon Fusion tutorial/GameScene.unity
+    guid: 6824ac74ac3eac2439bd171a757666dd
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

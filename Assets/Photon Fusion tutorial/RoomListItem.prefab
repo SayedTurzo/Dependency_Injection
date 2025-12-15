@@ -256,7 +256,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6589655255804449107}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -521206750021159203}
+        m_TargetAssemblyTypeName: RoomListItemUI, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3963029543226973995
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,4 +495,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf2d2dd70c350dd4eaed3e1cbdb82656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoomListItemUI
-  roomInfoText: {fileID: 6733739518741842721}
+  infoText: {fileID: 6733739518741842721}

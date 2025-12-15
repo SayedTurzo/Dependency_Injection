@@ -1,20 +1,21 @@
-using TMPro;
 using UnityEngine;
+using TMPro;
+using Fusion;
 
 public class RoomListItemUI : MonoBehaviour
 {
-    public TMP_Text roomInfoText;
+    public TextMeshProUGUI infoText;
+    private string _roomName;
 
-    private string roomName;
-
-    public void Setup(string name, int current, int max)
+    public void Setup(SessionInfo session)
     {
-        roomName = name;
-        roomInfoText.text = $"{name} — {current} / {max}";
+        _roomName = session.Name;
+        infoText.text = $"{session.Name} ({session.PlayerCount}/{session.MaxPlayers})";
     }
 
-    public void OnJoinClicked()
+    public void OnClick()
     {
-        FusionLauncher.Instance.JoinRoom(roomName);
+        // Find the UI controller in the scene and tell it to join this room
+        FindObjectOfType<MenuUIController>().JoinSelectedRoom(_roomName);
     }
 }
